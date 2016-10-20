@@ -1,6 +1,6 @@
 {
   "name": "vtt-cue-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic object extraction from WebVTT cues",
   "main": "index.js",
   "scripts": {
