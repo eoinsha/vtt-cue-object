@@ -1,6 +1,8 @@
 vtt-cue-object
 ===
 
+[![Build Status](https://travis-ci.org/eoinsha/vtt-cue-object.svg?branch=master)](https://travis-ci.org/eoinsha/vtt-cue-object)
+
 Simple wrapper around [vtt.js](https://github.com/mozilla/vtt.js) that runs without any browser and produces an object representation of WebVTT cues.
 
 # Usage
