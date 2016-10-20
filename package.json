@@ -1,0 +1,32 @@
+{
+  "name": "vtt-cue-object",
+  "version": "1.0.0",
+  "description": "Basic object extraction from WebVTT cues",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "git push origin HEAD && git push origin v${npm_package_version}",
+    "test": "tap test --100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eoinsha/vtt-cue-object.git"
+  },
+  "keywords": [
+    "vtt",
+    "parse",
+    "object"
+  ],
+  "author": "Eoin Shanaghy <eoin@showpiper.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eoinsha/vtt-cue-object/issues"
+  },
+  "homepage": "https://github.com/eoinsha/vtt-cue-object#readme",
+  "devDependencies": {
+    "tap": "^7.1.2"
+  },
+  "dependencies": {
+    "once": "^1.4.0",
+    "vtt.js": "^0.12.1"
+  }
+}
