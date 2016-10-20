@@ -1,7 +1,7 @@
 vtt-cue-object
 ===
 
-Simple wrapper around (vtt.js)[https://github.com/mozilla/vtt.js] that runs without any browser and produces an object representation of WebVTT cues.
+Simple wrapper around [vtt.js](https://github.com/mozilla/vtt.js) that runs without any browser and produces an object representation of WebVTT cues.
 
 # Usage
 
