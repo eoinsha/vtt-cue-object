@@ -2,15 +2,7 @@ var test = require('tap').test;
 var VttToObject = require('..');
 
 test('parse a few cues', function(t) {
-  var vtt = `WEBVTT FILE
-
-1
-00:00:03.500 --> 00:00:05.000 D:vertical A:start
-This is the beginning
-
-2
-00:00:06.000 --> 00:00:09.000 A:start
-This is the end`;
+  var vtt = 'WEBVTT FILE\n\n1\n00:00:03.500 --> 00:00:05.000 D:vertical A:start\nThis is the beginning\n\n2\n00:00:06.000 --> 00:00:09.000 A:start\nThis is the end';
   VttToObject(vtt, (err, obj) => {
     t.equal(err, null);
     t.isA(obj, 'object');
