@@ -1,0 +1,43 @@
+root: true
+
+extends:
+  - 'eslint:recommended'
+
+ecmaFeatures:
+  arrowFunctions: true
+  binaryLiterals: true
+  blockBindings: true
+  defaultParams: true
+  destructuring: true
+  forOf: true
+  generators: true
+  modules: true
+  objectLiteralComputedProperties: true
+  objectLiteralDuplicateProperties: true
+  objectLiteralShorthandMethods: true
+  objectLiteralShorthandProperties: true
+  octalLiterals: true
+  regexUFlag: true
+  regexYFlag: true
+  restParams: true
+  spread: true
+  templateStrings: true
+  unicodeCodePointEscapes: true
+
+rules:
+  no-console:
+    - 0
+  no-unused-expressions: 2
+  no-unused-vars:
+    - 2
+    - vars: all
+      args: none
+
+env:
+  node: true
+  mocha: true
+  es6: true
+
+globals:
+  window: false
+  navigator: false

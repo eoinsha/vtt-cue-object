@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postversion": "git push origin HEAD && git push origin v${npm_package_version}",
-    "test": "tap test --100"
+    "test": "tap test --100",
+    "cov": "tap test --100 --coverage-report=html"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/eoinsha/vtt-cue-object#readme",
   "devDependencies": {
+    "eslint": "^3.10.0",
     "tap": "^7.1.2"
   },
   "dependencies": {

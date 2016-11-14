@@ -5,14 +5,17 @@ module.exports = function(vttText, done) {
   var cb = Once(done); // Required as vtt.js can fire multiple errors
 
   // Mock objects required in absence of browser
-  var mockWindowObject = {
+  /* istanbul ignore next */
+  var mockWindowObject = typeof window !== 'undefined' ? window : {
     VTTCue: Vtt.VTTCue,
     VTTRegion: Vtt.VTTRegion
   };
 
-  global.navigator = {
-    userAgent: ''
-  };
+  if (typeof navigator === 'undefined') {
+    global.navigator = {
+      userAgent: ''
+    };
+  }
 
   var cues = [];
 
